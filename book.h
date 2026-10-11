@@ -27,6 +27,11 @@ namespace leedahae2449069
       }
     }
     public:
+       book(int d,int p):ID{d}, Price{p}
+       {
+        tesetID{}; testPrice();
+       }
+
     void input()
 
     {
@@ -41,12 +46,12 @@ namespace leedahae2449069
 
     void setID(int d){ID=d;testID();}
     void setPrice(int p){Price=p;testPrice();}
-    void print()
+    void print() const
     {
       std::cout << ID <<", "<< Price << "won\n";
     }
-    int getID() {return ID;}
-    int getPrice() {return Price;}
+    int getID() const {return ID;}
+    int getPrice() const {return Price;}
 
 
   }; // 여기에는 세미쿨론 넣어야 함. class는 정의라서. 끝이라는 의미로 세미쿨론
