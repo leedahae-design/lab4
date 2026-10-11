@@ -29,7 +29,7 @@ namespace leedahae2449069
     public:
        book(int d,int p):ID{d}, Price{p}
        {
-        tesetID{}; testPrice();
+        testID(); testPrice();
        }
 
     void input()
